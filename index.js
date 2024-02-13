@@ -19,7 +19,7 @@ pfServer.use('/uploads',express.static('./uploads'))
 
 const PORT = 3000 || process.env.PORT
 pfServer.listen(PORT, () => {
-    console.log(`Project fair server started at port:${Port}`);
+    console.log(`Project fair server started at PORT:${PORT}`);
 })
 
 // to resolve get http request to http://localhost:3000/
