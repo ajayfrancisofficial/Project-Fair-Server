@@ -17,8 +17,8 @@ pfServer.use(router)
 //to make file/folder available to other app
 pfServer.use('/uploads',express.static('./uploads'))
 
-const Port = 3000
-pfServer.listen(Port, () => {
+const PORT = 3000 || process.env.PORT
+pfServer.listen(PORT, () => {
     console.log(`Project fair server started at port:${Port}`);
 })
 
